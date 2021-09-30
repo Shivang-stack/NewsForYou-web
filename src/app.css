@@ -9,26 +9,33 @@ body {
   font-family: inter;
   width: 80%;
   margin: 0 auto;
-  background: rgb(31, 43, 48);
-  
+  background-image: url("wave-haikei.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 h1.head__text{
   color: aliceblue;
 }
+.img-fluid{
+  max-width: 350px;
+  max-height: min-content;
+}
 .all__news {
-  margin: 50px auto;
+  margin: 30px ;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  
+  grid-area: auto;
 }
 
 .news {
-  max-width: 500px;
+  max-width: 400px;
+  max-height: fit-content;
   padding: 30px;
   border: 1px solid rgb(248, 243, 243);
   border-radius: 5px;
-  background: rgb(163, 180, 187);
+  background: rgb(213, 215, 226);
 }
 
 .news__title {
