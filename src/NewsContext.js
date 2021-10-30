@@ -22,4 +22,3 @@ export const NewsContextProvider = (props) => {
     </NewsContext.Provider>
   );
 };
-//https://newsapi.org/v2/top-headlines?country=in&sortBy=publishedAt&apiKey=&{apikey}
