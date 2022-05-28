@@ -5,12 +5,11 @@ export const NewsContext = createContext();
 
 export const NewsContextProvider = (props) => {
   const [data, setData] = useState();
-  const apiKey = "7baebdc7f11c4b1c8b757bd78097e88f";
-
+  
   useEffect(() => {
     axios
       .get(
-        `http://newsapi.org/v2/everything?q=india&sortBy=publishedAt&apiKey=${apiKey}`
+        `http://newsapi.org/v2/everything?q=india&sortBy=publishedAt&apiKey=7baebdc7f11c4b1c8b757bd78097e88f`
       )
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
